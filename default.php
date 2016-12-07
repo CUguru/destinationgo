@@ -1,3 +1,4 @@
+<!-- test comment -->
 <!------------ HEADER SECTION ------------>
 
 <?php require 'includes/header.php' ?>
