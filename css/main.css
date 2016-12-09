@@ -1,4 +1,4 @@
-/*!!!!!----------- ALL PAGES -----------!!!!!*/
+/*!!!!!----------- MULTIPLE PAGES -----------!!!!!*/
 
 * {
     box-sizing: border-box;
@@ -27,11 +27,22 @@ a {
     color: #4f4f4f;
 }
 
+p {
+    margin-bottom: 1em;
+}
+
 .section {
     width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
+}
+
+.section-bg {
+    padding-top: 2em;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title-bg {
@@ -49,6 +60,42 @@ a {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.container {
+    margin: 0 auto 2em;
+    padding: 2%;
+    width: 65%;
+    text-align: justify;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 15px 0 rgba(89,89,89,0.2);
+    background-color: #fff;
+}
+
+.image-container {
+    width: 38%;
+    overflow: hidden;
+}
+
+.image-container > img {
+    width: 100%;
+}
+
+.text-container {
+    margin-left: 3%;
+    width: 60%;
+}
+
+.text-container > h2 {
+    margin-top: 0.2em;
+}
+
+.text-container > h3 {
+    margin-top: 0.2em;
+}
+
+.text-container > p {
+    margin: 1em 0 1.6em;
 }
 
 .read-more {
@@ -200,33 +247,22 @@ a {
 
 /*!!!!!----------- ABOUT_US.PHP -----------!!!!!*/
 
-#about-us-section > p {
-    text-align: left;
+#about-us-bg {
+    background-image: url('../images/placeholder.png');
 }
 
 /*!!!!!----------- REVIEWS.PHP -----------!!!!!*/
 
-.location-container {
-    background-color: lightgrey;
-    text-align: left;
-    height: 40vh;
-    margin-bottom: 1em;
+#reviews-bg {
+    background-image: url('../images/placeholder.png');
 }
 
-.location-image-container {
-    width: 30%;
-    overflow: hidden;
-    height: 100%;
-    float: left;
-}
-
-.location-image-container > img {
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.reviews-read-more {
-    float: right;
+.reviews-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 /*!!!!!----------- SEARCH_RESULTS.PHP -----------!!!!!*/
@@ -236,47 +272,15 @@ a {
 }
 
 #search-results-bg {
-    padding-top: 2em;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url('../images/placeholder.png');
 }
 
 .results-container {
-    margin: 0 auto 2em;
-    padding: 2%;
-    width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    border: 1px solid #e8e8e8;
-    background-color: #fff;
-}
-
-.results-image-container {
-    width: 38%;
-    overflow: hidden;
-}
-
-.results-image-container > img {
-    width: 100%;
-}
-
-.results-text {
-    margin-left: 3%;
-    width: 60%;
-    text-align: justify;
-}
-
-.results-text > h2 {
-    margin-top: 0.2em;
-}
-
-.results-text > p {
-    margin: 1em 0 1.6em;
+    flex-flow: row nowrap; 
 }
 
 /*!!!!!----------- NEWSLETTER.PHP -----------!!!!!*/
