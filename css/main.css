@@ -114,11 +114,11 @@ a {
 /*!!!!!----------- DEFAULT.PHP -----------!!!!!*/
 
 #preferences-section {
-    background-color: lightblue;
+    background-color: transparent;
 }
 
 #preferences-container {
-    background-color: skyblue;
+    background-color: transparent;
 }
 
 #preferences-form {
@@ -127,6 +127,15 @@ a {
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+}
+
+#preferences-form input[type='radio'] {
+    visibility: hidden;
+    position: absolute;
+}
+
+#preferences-form input + img{ 
+    cursor: pointer;
 }
 
 .categories {
@@ -156,7 +165,7 @@ a {
 
 #feat-dest-section {
     height: auto;
-    background-color: beige;
+    background-color: transparent;
 }
 
 .pin {
