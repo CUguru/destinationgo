@@ -18,21 +18,23 @@ function isCurrentPage($page) {
 }
 ?>
 
-<nav id='navigation'>
-    <ul id='log-in'>
-        <a href='#'><li>Sign Up</li></a>
-        <span id='divider'>|</span>
-        <a href='#'><li>Log In</li></a>
-    </ul>
-    <a href='default.php'>
-        <div id='navigation-container'>
-            <img id='logo' src='images/logo.png'/>
-        </div>
-    </a>
-    <ul id='main-nav'>
-        <a href='about_us.php'><li <?php isCurrentPage('about us')?> >About Us</li></a>
-        <a href='default.php#feat-dest-section'><li>Featured Locations</li></a>
-        <a href='reviews.php'><li <?php isCurrentPage('reviews')?> >Reviews</li></a>
-        <a href='default.php#contact-section'><li>Contact Us</li></a>
-    </ul>
-</nav>
+<header class="entireFlax_item">
+    <nav id='navigation'>
+        <ul id='log-in'>
+            <a href='#'><li>Sign Up</li></a>
+            <span id='divider'>|</span>
+            <a href='#'><li>Log In</li></a>
+        </ul>
+        <a href='default.php'>
+            <div id='navigation-container'>
+                <img id='logo' src='images/logo.png'/>
+            </div>
+        </a>
+        <ul id='main-nav'>
+            <a href='about_us.php'><li <?php isCurrentPage('about us')?> ABOUT US</li></a>
+            <a href='default.php#feat-dest-section'><li>FEATURED LOCATIONS</li></a>
+            <a href='reviews.php'><li <?php isCurrentPage('reviews')?> REVIEWS</li></a>
+            <a href='default.php#contact-section'><li>CONTACT US</li></a>
+        </ul>
+    </nav>
+</header>
