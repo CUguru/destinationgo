@@ -32,7 +32,11 @@ a {
     text-decoration: none;
     color: #4f4f4f;
 }
-
+p {
+    /*letter-spacing: .05em;*/
+    line-height: 22px;
+    font-size: 1em;
+}   
 h1 {
     font: 2em "FlowerHunters","Palatino Linotype",Times,serif;
     color: #666666;
@@ -42,13 +46,27 @@ h1 {
     text-align: center;
     /*top:20px;*/
     letter-spacing: .1em;
-    margin-top: 1em;
+    margin-top: .5em;
     line-height: 1.5em;
 }
 
 .align_left {
     text-align: left;
     margin-left:10%;
+}
+.margin_b1 {
+    padding-left: 12%;        
+    margin: 0 0 .5em 0;
+}
+.margin_b2 {
+    margin: 0 0 2em 0;
+}
+
+h2 {
+    font-family: 'Open Sans', 'Helvetica Neue', arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #494949;
 }
 
 .font_white {
@@ -90,6 +108,9 @@ h1 {
 
 
 /*!!!!!----------- NAVIGATION.PHP -----------!!!!!*/
+header {
+    z-index: 10;
+}
 #navigation {
     height: 10em;
     font-weight: 400;
@@ -99,7 +120,7 @@ h1 {
 
 #navigation-container {
     text-align: center;
-    margin: 1em 0 2em;
+    margin: 1em 0 2.5em;
 }
 
 #current {
@@ -165,9 +186,15 @@ h1 {
 }
 #preferences-section {
     height: 52em;
+    margin-top: -6em;
+}
+
+
+
+
     /*background-color: lightblue;*/
      /*background-color: transparent; nicole*/
-}
+
 
 #preferences-container {
     /*background-color: skyblue;*/
@@ -176,13 +203,14 @@ h1 {
 .hero-image{
     width: 100%;
     position: relative;
-    padding: 0px;
+    padding: 5em 0 0 0;
     background: url("../images/hero-bg.png");
     background-repeat:no-repeat;
     height: 50em;
     background-size: cover;
     background-position: 50% 50%;
     margin: 0 auto;
+    z-index: 0;
 }
 #preference_blackBg {
     width: 80%;
@@ -194,11 +222,12 @@ h1 {
     /*text-align: center;*/
 }
 #preferences-form {
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    flex-flow: row wrap;*/
+    margin: 0 auto;
 }
 
 #preferences-form input[type='radio'] {
@@ -215,8 +244,10 @@ h1 {
     width: 50%;
 }
 .buttons-row{
-    width: 90%;
-    display:inherit;
+    display: flex;
+    flex-flow: row wrap;
+    /*width: 90%;*/
+    /*display:inherit;*/
     margin: 3em auto 0;
     /*width:100%;*/
     /*left: 25%;*/
@@ -227,7 +258,8 @@ h1 {
 
 .categories-box {
     padding: 0;
-    width: 230px;
+    /*width: 230px;*/
+    width: 250px;
     height: 115px;
 }
 
@@ -267,10 +299,19 @@ input[type="radio"] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
-
+.add_space {
+    width: 10%;
+    height: 2em;
+    /*background-color: pink;*/
+}
+/*--------------FEATURED DESTINATIONS SECTION*/
 #feat-dest-section {
-    height: auto;
-    background-color: beige;
+    height: 40em;
+    /*background-color: beige;*/
+}
+
+#map {
+    margin: 6em 0 0 0;
 }
 
 .pin {
@@ -344,15 +385,18 @@ input[type="radio"] {
 /*!!!!!----------- SEARCH_RESULTS.PHP -----------!!!!!*/
 
 #search-results-section {
-    background-color: transparent;
+    width: 100%;
+    min-height: 70em;
+    /*background-color: pink;*/
+    margin: 3em 0 0 0;
 }
 
 #search-results-bg {
     padding-top: 2em;
     overflow: hidden;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../images/placeholder.png');
+    background-image: url('../images/newsletter_bg.png');
 }
 
 .results-container {
@@ -364,7 +408,8 @@ input[type="radio"] {
     display: flex;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-    border: 1px solid #e8e8e8;
+    /*border: 1px solid #e8e8e8;*/
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
@@ -401,22 +446,22 @@ input[type="radio"] {
 .newsletter-bg{
     width: 100%;
     position: relative;
-    padding: 0px;
+   
     background: url("../images/newsletter_bg.png");
     background-repeat:no-repeat;
     height: 710px;
     background-size: contain;
     background-position: 50% 50%;
-    margin: 0 auto;
+    margin: 0 auto 2em;
 }
 
 .box-border{
-    width:60%;
-    height: 25em;
-    /*width:653px;
-    height: 460px;*/
+    /*width:60%;
+    height: 25em;*/
+    width:622px;
+    height: 430px;
     top:10%;
-    background: url("../images/newsletter_pic.jpg");
+    background: url("../images/newsletter_pic.gif");
     background-repeat:no-repeat;
     background-position: 50% 50%;
     position: relative;
@@ -451,7 +496,8 @@ input[type="radio"] {
     border: 1px solid #82ca9c;
     /*position:absolute;*/
     margin: 0 auto;
-    width: 280px;
+    width: 300px;
+    /*width: 280px;*/
     height: 40px;
     /*left:75px;
     bottom:25px;*/
@@ -465,12 +511,15 @@ input[type="radio"] {
 /*!!!!!----------- CONTACT.PHP -----------!!!!!*/
 
 #contact-section {
-    background-color: lightpink;
+    /*background-color: lightpink;*/
+    width: 40%;
+    height: 20em;
+    margin: 15em 0 0 55%;
 }
 
 #contact-form {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
 }
 
 #contact-form textarea, #contact-form > input {
@@ -480,13 +529,24 @@ input[type="radio"] {
 /*!!!!!----------- FOOTER.PHP -----------!!!!!*/
 
 #footer-section {
-    text-align: center;
-    height: auto;
-    background-color:blue;
+  
+    /*background-color:blue;*/
+    
 }
 
+.footer-bg{
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    background: url("../images/footer_bg.png");
+    background-repeat:no-repeat;
+    height:40em;
+    background-size: cover;
+    background-position: 50% 30%;
+    margin: 0 auto;
+}
 #footer-section > ul {
-     height: 5em;
+    height: 5em;
     list-style-type: none;
 }
 
@@ -494,6 +554,18 @@ input[type="radio"] {
     display: inline-block;
 }
 
+.address {
+    color: #fff;
+    margin: 0 0 0 55%;
+}
+.socials {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 5%;
+    bottom: .5em;
+     /*margin: 0 0 2em 15%;*/
+}
 .social-media {
     /*width: 1.5em;*/
    
@@ -501,17 +573,6 @@ input[type="radio"] {
     margin-right: .5em;
 }
 
-.footer-bg{
-    width: 100%;
-    position: relative;
-    padding: 0px;
-    background: url("../images/footer-bg.png");
-    background-repeat:no-repeat;
-    height: 850px;
-    background-size: cover;
-    background-position: 50% 30%;
-    margin: 0 auto;
-}
 .contact-box{
     width:450px;
     height: 300px;
@@ -544,6 +605,7 @@ input[type="radio"] {
     display: inline-block;
     width: 300px;
     height: 40px;
+    margin: .25em auto;
     padding: 7px 15px;
     font-size: 14px;
     line-height: 0.8;
