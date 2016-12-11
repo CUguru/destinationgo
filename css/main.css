@@ -349,10 +349,30 @@ input[type="radio"] {
 
     
 /*!!!!!----------- ABOUT-US.PHP -----------!!!!!*/
+#about-us-section  {
+    height: 45em;
+    width: 100%;
+    /*min-height: 70em;*/
+    /*background-color: pink; */
+    margin: 3em 0 0 0;
+}
+.about_container {
+    min-height: 35em;
+    width: 60%;
+    margin: 0 auto;
+    /*background-color: green;*/
+}
 
+
+
+}
 #about-us-section > p {
     text-align: left;
+  
 }
+
+
+
 
 /*!!!!!----------- REVIEWS.PHP -----------!!!!!*/
 
