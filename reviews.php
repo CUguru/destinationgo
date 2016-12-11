@@ -10,7 +10,7 @@
 
 <!------------ REVIEWS SECTION ------------>
 
-<main class='section' id='reviews-section'>
+<main class='section entireFlax_item' id='reviews-section'>
     
     <h1 class='margin_b2'>Reviews</h1>
     
