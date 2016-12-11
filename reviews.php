@@ -8,8 +8,6 @@
 
 <!------------ REVIEWS SECTION ------------>
 
-<!------------ REVIEWS SECTION ------------>
-
 <main class='section entireFlax_item' id='reviews-section'>
     
     <h1 class='margin_b2'>Reviews</h1>
@@ -17,8 +15,8 @@
     <div class='section-bg' id='reviews-bg'>
     
         <div class='container reviews-container'>
-            <div class='image-container'>
-                <img src='images/reviews_pic01.gif'/>
+            <div class='image-container reviewPic1'>
+                <!--<img src='images/reviews_pic01.gif'/>-->
             </div>
             <div class='text-container'>
                 <h2>Title</h2>
@@ -29,8 +27,8 @@
         </div> <!-- end reviews-container -->
         <hr>
        <div class='container reviews-container'>
-            <div class='image-container'>
-                <img src='images/reviews_pic02.gif'/>
+            <div class='image-container reviewPic2'>
+                <!--<img src='images/reviews_pic02.gif'/>-->
             </div>
             <div class='text-container'>
                 <h2>Title</h2>
@@ -41,8 +39,8 @@
         </div> <!-- end reviews-container -->
         <hr>
         <div class='container reviews-container'>
-            <div class='image-container'>
-                <img src='images/reviews_pic03.gif'/>
+            <div class='image-container reviewPic3'>
+                <!--<img src='images/reviews_pic03.gif'/>-->
             </div>
             <div class='text-container'>
                 <h2>Title</h2>
@@ -56,6 +54,7 @@
     </div> <!-- end reviews-bg -->
     
 </main> <!-- end main-section -->
+
 
 <!------------ FOOTER SECTION ------------>
 
