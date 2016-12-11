@@ -31,9 +31,11 @@ function isCurrentPage($page) {
             </div>
         </a>
         <ul id='main-nav'>
-            <a href='about_us.php'><li <?php isCurrentPage('about us')?> ABOUT US</li></a>
+            <!-- <a href='about_us.php'><li <?php isCurrentPage('about us')?> ABOUT US</li></a> -->
+            <a href='about_us.php'><li> ABOUT US</li></a>
             <a href='default.php#feat-dest-section'><li>FEATURED LOCATIONS</li></a>
-            <a href='reviews.php'><li <?php isCurrentPage('reviews')?> REVIEWS</li></a>
+            <!-- <a href='reviews.php'><li <?php isCurrentPage('reviews')?> REVIEWS</li></a> -->
+            <a href='reviews.php'><li> REVIEWS</li></a>
             <a href='default.php#contact-section'><li>CONTACT US</li></a>
         </ul>
     </nav>
