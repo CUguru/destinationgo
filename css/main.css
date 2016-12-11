@@ -36,7 +36,8 @@ p {
     /*letter-spacing: .05em;*/
     line-height: 22px;
     font-size: 1em;
-}   
+}  
+ 
 h1 {
     font: 2em "FlowerHunters","Palatino Linotype",Times,serif;
     color: #666666;
@@ -69,11 +70,21 @@ h2 {
     color: #494949;
 }
 
+h3 {
+    font-family: 'Open Sans', 'Helvetica Neue', arial, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #494949;
+    margin: 1em 0 1em 0;
+}
 .font_white {
     color: #fff;
     background: none;
 }
-
+.font_mint {
+    font-weight: 400;
+    color: #ff6600;;
+}
 .section {
     width: 100%;
     height: auto;
@@ -98,15 +109,38 @@ h2 {
     transform: translateX(-50%);
 }
 
-.read-more {
+/*.read-more {
     padding: 0.5em 3em;
     text-align: center;
     color: #ffffff;
     font-weight: 500;
     background-color: #5cb287;
+}*/
+
+.read-more {
+    width: 100px;
+    height: 25px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 0.5em .5em;
+    border: 1px solid #666666;
+    /*background-color: grey;*/
+    margin: 1em auto;
 }
 
+.read-more:hover {
+    color: #fff;
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+}
 
+hr {
+    width: 60%;
+    margin: 2em auto;
+    /*color: #999999;*/
+}
 /*!!!!!----------- NAVIGATION.PHP -----------!!!!!*/
 header {
     z-index: 10;
@@ -349,7 +383,7 @@ input[type="radio"] {
 
     
 /*!!!!!----------- ABOUT-US.PHP -----------!!!!!*/
-#about-us-section  {
+#about-us-section {
     height: 45em;
     /*width: 100%;*/
     /*min-height: 70em;*/
@@ -376,6 +410,39 @@ input[type="radio"] {
 
 /*!!!!!----------- REVIEWS.PHP -----------!!!!!*/
 
+#reviews-section {
+    height: 145em;
+    /*width: 100%;*/
+    /*min-height: 70em;*/
+    /*background-color: pink; */
+    margin: 3em 0 0 0;
+}
+.reviews-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container {
+    text-align: center;
+    margin: 1em auto 1em;
+    /*width: 100%;*/
+    height: 25em;
+ 
+    position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reviewPic1 {
+    background-image: url('../images/reviews_pic01.gif');
+}
+.reviewPic2 {
+    background-image: url('../images/reviews_pic02.gif');
+}
+.reviewPic3 {
+    background-image: url('../images/reviews_pic03.gif');
+}
+
+
 .location-container {
     background-color: lightgrey;
     text-align: left;
@@ -395,11 +462,7 @@ input[type="radio"] {
     min-height: 100%;
 }
 
-.read-more {
-    float: right;
-    padding: 0.5em 3em;
-    background-color: grey;
-}
+
 
 
 /*!!!!!----------- SEARCH_RESULTS.PHP -----------!!!!!*/
