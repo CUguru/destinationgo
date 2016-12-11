@@ -9,5 +9,4 @@
             </form>
             <input class="button1" type="Submit" value="SUBSCRIBE"></input>
         </div>
-        <?php require 'includes/newsletter.php' ?>
     </div>
