@@ -36,6 +36,7 @@ p {
     /*letter-spacing: .05em;*/
     line-height: 22px;
     font-size: 1em;
+    text-align: left;
 }  
  
 h1 {
@@ -116,7 +117,9 @@ h3 {
     font-weight: 500;
     background-color: #5cb287;
 }*/
-
+.read_float {
+    float: right;
+}
 .read-more {
     width: 100px;
     height: 25px;
@@ -398,16 +401,72 @@ input[type="radio"] {
 }
 
 
-
-}
 #about-us-section > p {
     text-align: left;
   
 }
+/*!!!!!----------- featured_locations.PHP -----------!!!!!*/
+#featured_locations-section {
+     height: 84em;
+     margin: 3em 0 0 0;
+}
+.featured-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container2 {
+    text-align: center;
+    margin: 0em auto 2em;
+    /*width: 100%;*/
+    height: 25em;
+    position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.featuredPic1 {
+    background-image: url('../images/featured_pic01.gif');
+}
 
-
-
-
+.text-container {
+    margin: 2em auto 3em;
+}
+.other_popular {
+    width: 60%;
+    height: 25em;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+.each_destination {
+    width: 32%;
+    min-height: 23em;
+    /*background-color: green;*/
+    float: left;
+    border: 1px solid #666666;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.margin_add1 {
+    margin:0 2%;
+}
+.each_popularPic {
+    height: 10em;
+    position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0em auto 1em;
+}
+.p_pic1 {
+    background-image: url('../images/popular_pic01.gif');
+}
+.p_pic2 {
+    background-image: url('../images/popular_pic02.gif');
+}
+.p_pic3 {
+    background-image: url('../images/popular_pic03.gif');
+}
+.each_destination>p {
+    padding: 1em;
+}
 /*!!!!!----------- REVIEWS.PHP -----------!!!!!*/
 
 #reviews-section {
@@ -492,7 +551,7 @@ input[type="radio"] {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     /*border: 1px solid #e8e8e8;*/
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
     background-color: #fff;
 }
 
@@ -639,7 +698,10 @@ input[type="radio"] {
 
 .address {
     color: #fff;
-    margin: 0 0 0 55%;
+    /*margin: 0 0 0 65%;*/
+    position: absolute;
+    right: 9%;
+    margin-top:-5px;
 }
 .socials {
     position: absolute;
