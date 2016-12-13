@@ -10,7 +10,7 @@
     
     <h1 class='margin_b2'>About Us</h1>
     <div class='section-bg' id='about-us-bg'>
-        
+        <div class="about_bg"></div>
         <div class='about_container'>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit massa et dictum scelerisque. Pellentesque ac quam porta, tempor lacus vitae, accumsan libero. Curabitur eu laoreet ante. Morbi a vulputate massa, vitae mollis orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc malesuada neque orci, vitae rutrum enim tincidunt a. Maecenas quis ex mattis, pharetra ex non, porta sapien. Fusce sagittis placerat purus, ac convallis purus accumsan non. Sed ipsum magna, viverra ac tincidunt in, pretium a ipsum. Proin eu mattis dui. Curabitur sagittis semper lorem ac congue.
