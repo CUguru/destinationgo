@@ -387,7 +387,7 @@ input[type="radio"] {
     
 /*!!!!!----------- ABOUT-US.PHP -----------!!!!!*/
 #about-us-section {
-    height: 45em;
+    height: 70em;
     /*width: 100%;*/
     /*min-height: 70em;*/
     /*background-color: pink; */
@@ -400,10 +400,23 @@ input[type="radio"] {
     /*background-color: green;*/
 }
 
-
 #about-us-section > p {
     text-align: left;
-  
+}
+#about-us-bg {
+    text-align: center;
+     margin: 0 auto;
+}
+.about_bg {
+    /*width: 30%;*/
+    /*height: 20em;*/
+    width: 514px;
+    height: 414px;
+    margin: 0 auto;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/aboutUs_bg.png');
 }
 /*!!!!!----------- featured_locations.PHP -----------!!!!!*/
 #featured_locations-section {
@@ -613,10 +626,9 @@ input[type="radio"] {
 }
 
 .newsletter-box{
-    /*width:450px;
-    height: 250px;*/
     width:40%;
-    height: 18em;
+    /*height: 18em;*/
+    height: 20em;
     bottom:15%;
     background: #fff;
     position: relative;
