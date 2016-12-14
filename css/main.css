@@ -211,7 +211,6 @@ header {
     color: #000;
 }
 
-
 /*!!!!!----------- DEFAULT.PHP -----------!!!!!*/
 .entireFlax_container {
     display: flex;
@@ -226,17 +225,6 @@ header {
     margin-top: -6em;
 }
 
-
-
-
-    /*background-color: lightblue;*/
-     /*background-color: transparent; nicole*/
-
-
-#preferences-container {
-    /*background-color: skyblue;*/
-     /*background-color: transparent; nicole*/
-}
 .hero-image{
     width: 100%;
     position: relative;
@@ -341,59 +329,6 @@ input[type="radio"] {
     height: 2em;
     /*background-color: pink;*/
 }
-/*--------------FEATURED DESTINATIONS SECTION*/
-#feat-dest-section {
-    height: 40em;
-    /*background-color: beige;*/
-}
-
-#map {
-    margin: 6em 0 0 0;
-}
-
-.pin {
-    position: absolute;
-}
-
-.pin-box {
-    position: absolute;
-    background: #fff;
-    display: none;
-    padding: 5px;
-    width: 250px;
-    height:340px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-}
-.pin-arrow{
-    position: absolute;
-    background: url(../images/arrow.png);
-    width:16px;
-    height:34px;
-    background-position: 250px 20px;
-    
-}
-
-.pin-image {
-    width: 100%;
-    height: 34px;
-}
-
-#pin-1-box {
-    top: 0;
-}
-
-#pin-1 {
-    top: 50%;
-}
-
-#pin-1-image {
-    background: url(../images/placeholder.png);
-}
-
-
-
-
     
 /*!!!!!----------- ABOUT-US.PHP -----------!!!!!*/
 #about-us-section {
@@ -428,16 +363,128 @@ input[type="radio"] {
     background-repeat: no-repeat;
     background-image: url('../images/aboutUs_bg.png');
 }
-/*!!!!!----------- featured_locations.PHP -----------!!!!!*/
+/*!!!!!----------- FEATURED_LOCATIONS.PHP -----------!!!!!*/
+
+#feat-dest-section {
+    height: 40em;
+}
+
+#map {
+    margin: 6em 0 0 0;
+}
+
+#map-box {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 850px;
+}
+
+#map-img {
+    width: 100%;
+}
+
+.pin {
+    position: absolute;
+}
+
+#pin-1 {
+    top: 40%;
+    left: 57%;
+}
+
+#pin-2 {
+    top: 28%;
+    left: 33%;
+}
+
+#pin-3 {
+    top: 22%;
+    left: 70%;
+}
+
+.pin-box {
+    position: absolute;
+    background: #fff;
+    display: none;
+/*    display: block;*/
+    padding: 5px;
+    width: 250px;
+    height: 340px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#pin-1-box {
+    top: 20px;
+    left: 190px;
+}
+
+#pin-2-box {
+    top: 0;
+    left: 340px;
+}
+
+#pin-3-box {
+    display: block;
+    top: 0;
+    left: 310px;
+}
+
+#arrow-1 {
+    top: 165px;
+    left: 440px;
+}
+
+#arrow-2 {
+    top: 120px;
+    left: 320px;
+}
+
+#arrow-3 {
+    display: block;
+    top: 90px;
+    left: 560px;
+}
+
+.arrow-right {
+    display: none;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fff;
+}
+
+.arrow-left {
+    display: none;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #fff; 
+}
+
+.pin-image {
+    width: 100%;
+    height: 34px;
+}
+
+/*
 #featured_locations-section {
      height: 84em;
      margin: 3em 0 0 0;
 }
+
 .featured-container {
     width: 60%;
     margin: 0 auto;
     text-align: center;
 }
+*/
+
 .image-container2 {
     text-align: center;
     margin: 0em auto 2em;

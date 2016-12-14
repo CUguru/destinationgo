@@ -145,21 +145,49 @@
         </div> <!-- hero end ---->
     </main> <!-- end preferences-section -->
     
-    <!------------ FEATURED DESTINATIONS SECTION ------------>
+    <!------------ FEATURED LOCATIONS SECTION ------------>
     
     <div class='section entireFlax_item' id='feat-dest-section'>
         <h1>Featured Destinations</h1>
         <div id='map'>
-            <img src='images/world_map_850.png'/>
-        </div>
-        <img class='pin' id='pin-1' src='images/location.png'/>
-        <div class='pin-box' id='pin-1-box'>
-            <div class="each_popularPic p_pic1"></div>
-            <h2>Destination Name</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-            <a href='#'><div class='buttonSmall'>READ MORE</div></a>
-        </div>
-        <div class="pin-arrow"></div>
+            
+            <div id='map-box'>
+                <img id='map-img' src='images/world_map1.png'/>
+                
+                <!-- pin-1 -->
+                <img class='pin' id='pin-1' src='images/location.png'/>
+                <div class='pin-box' id='pin-1-box'>
+                    <div class="each_popularPic p_pic1"></div>
+                    <h2>Destination Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href='#'><div class='buttonSmall'>READ MORE</div></a>
+                </div> 
+                <div class='arrow-right' id='arrow-1'></div>
+                
+                <!-- pin-2 -->
+                <img class='pin' id='pin-2' src='images/location.png'/>
+                <div class='pin-box' id='pin-2-box'>
+                    <div class="each_popularPic p_pic2"></div>
+                    <h2>Destination Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href='#'><div class='buttonSmall'>READ MORE</div></a>
+                </div> 
+                <div class='arrow-left' id='arrow-2'></div>
+                
+                <!-- pin-3 -->
+                <img class='pin' id='pin-3' src='images/location.png'/>
+                <div class='pin-box' id='pin-3-box'>
+                    <div class="each_popularPic p_pic3"></div>
+                    <h2>Destination Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href='#'><div class='buttonSmall'>READ MORE</div></a>
+                </div> 
+                <div class='arrow-right' id='arrow-3'></div>
+                
+            </div> <!-- end map-box -->
+            
+        </div> <!-- end map -->
+<!--        <div class="pin-arrow"></div>-->
     </div> <!-- end feat-dest-section -->
     
 
@@ -170,7 +198,4 @@
 
 <!-- FOOTER SECTION -->
 
-
-<?php require 'includes/footer.php' ?>
-
-           
+<?php require 'includes/footer.php' ?>         
