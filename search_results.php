@@ -2,10 +2,11 @@
 
 <?php require 'includes/header.php' ?> 
 
-<!-- NAVIGATION & PREFERENCES SECTION -->
-    <?php require 'includes/nav.php' ?>
+<!-- NAVIGATION SECTION -->
+<?php require 'includes/nav.php' ?>
 
-
+<!-- MAIN_SEARCH SECTION -->
+<?php require 'includes/main_search.php' ?>
 
 <!------------ SEARCH RESULTS SECTION ------------>
 
@@ -56,6 +57,3 @@
 <!-- FOOTER SECTION -->
 
 <?php require 'includes/footer.php' ?>
-
-
-

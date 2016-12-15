@@ -13,7 +13,7 @@
             </div>-->
             <div id="preference_blackBg">
                 <h1 class="font_white">Pick Your Preferences</h1>
-                    <form id='preferences-form' action='' name="preferForm">
+                    <form id='preferences-form' action='search_results.php' name="preferForm">
                         <div class="buttons-row" >
                             <div class='categories-box'>
                                 <input type="radio" name="locationType" value="Beaches" id="Beaches"/>

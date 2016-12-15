@@ -19,7 +19,6 @@ $popularity = $_GET['popularity'];
 echo "WEATHER:";
 // var_dump( $weather );
 
-
 // create the main sql query
 $sql = "SELECT `d`.`name`,
 	`w`.`name` as `weather`,
@@ -61,7 +60,6 @@ if (isset($popularity)) {
 // prepare the sql query
 $query = $db->prepare( $sql );
 
-
 // once we check that the variable are set, we can then bind them to
 // the search query variable
 if (isset($weather)) {
@@ -88,28 +86,19 @@ if (isset($popularity)) {
 	$query->bindParam( ':popularity', $popularity);
 }
 
-
 // execute the query statment that we are searching for
 $query->execute();
 
 $data = $query->fetchAll();
-// var_dump($data);
 
+// debug function
+function dump($el)
+{
+    echo "<pre><div style='text-align=left';>";
+    var_dump($el); 
+    echo "</pre></div>";
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+dump($data);
 
 ?>
