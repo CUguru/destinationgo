@@ -12,8 +12,16 @@
 
 <main class='section entireFlax_item' id='search-results-section'>  
     
-     <h1 class='margin_b2'>Search Results</h1>
-   
+    <h1 class='margin_b2'>Search Results</h1>
+    
+    <?php 
+    
+//    foreach ($data as $row) {
+//        dump($row);
+//    }
+    
+    ?>
+    
     <div id='search-results-bg'>
         <div class="margin_b2"></div>
         <div class='results-container'>

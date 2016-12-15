@@ -1,12 +1,42 @@
 <?php
 
-// create a new PDO connection to the database
+// Prepare all PDO data to be used later
+$host = 'localhost';
+$dbname   = 'yujua_DestinationGoFinal';
+$user = 'root';
+$pass = 'root';
+$charset = 'utf8';
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+$opt = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+// Prepare all PDO data to be used later
+//$host = 'yujua.dev.fast.sheridanc.on.ca';
+//$dbname   = 'yujua_DestinationGoFinal';
+//$user = 'yujua_guest';
+//$pass = 'X5N6N@xUpYa_';
+//$charset = 'utf8';
+//$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+//$opt = [
+//    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+//    PDO::ATTR_EMULATE_PREPARES   => false,
+//];
+
 try {
-	$db = new PDO("mysql:host=uguru.dev.fast.sheridanc.on.ca;dbname=uguru_destinationGo;charset=utf8", "uguru_traveller", "WhyMustItBeThisLong?");
-	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $error) {
-	echo "ERROR: ".$error->getMessage();
+    $db = new PDO($dsn, $user, $pass, $opt);
+} catch (PDOException $error) {
+    echo "ERROR: ".$error->getMessage();
 }
+
+// create a new PDO connection to the database
+//try {
+//	$db = new PDO("mysql:host=uguru.dev.fast.sheridanc.on.ca;dbname=uguru_destinationGo;charset=utf8", "uguru_traveller", "WhyMustItBeThisLong?");
+//	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//} catch(PDOException $error) {
+//	echo "ERROR: ".$error->getMessage();
+//}
 
 // fetch all the variables from the checkboxed options
 $weather = $_GET['weather'];
@@ -16,14 +46,24 @@ $location = $_GET['location'];
 $family = $_GET['family'];
 $popularity = $_GET['popularity'];
 
-echo "WEATHER:";
-// var_dump( $weather );
+echo($weather);
+echo "<br>";
+echo($activity);
+echo "<br>";
+echo($cost);
+echo "<br>";
+echo($location);
+echo "<br>";
+echo($popularity);
+echo "<br>";
+echo($family);
+echo "<br>";
 
 // create the main sql query
 $sql = "SELECT `d`.`name`,
-	`w`.`name` as `weather`,
-	`c`.`name` as `cost`,
-	`f`.`name` as `family`
+`w`.`name` as `weather`,
+`c`.`name` as `cost`,
+`f`.`name` as `family`
 FROM `destinations` AS `d`
 INNER JOIN `weather` AS `w` ON ( `d`.`wid`= `w`.`wid`)
 INNER JOIN `cost` AS  `c` ON ( `d`.`cid` = `c`.`cid` )
@@ -98,6 +138,7 @@ function dump($el)
     var_dump($el); 
     echo "</pre></div>";
 }
+
 
 dump($data);
 
