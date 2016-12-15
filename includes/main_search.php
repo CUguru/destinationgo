@@ -144,4 +144,9 @@ function dump($el)
 
 dump($data);
 
+foreach($data as $row) {
+    echo "Your destination: ";
+    echo $row[0];
+}
+
 ?>
