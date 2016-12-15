@@ -142,7 +142,6 @@ function dump($el)
     echo "</pre></div>";
 }
 
-
 dump($data);
 
 ?>
