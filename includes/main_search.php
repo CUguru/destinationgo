@@ -63,7 +63,10 @@ echo "<br>";
 $sql = "SELECT `d`.`name`,
 `w`.`name` as `weather`,
 `c`.`name` as `cost`,
-`f`.`name` as `family`
+`f`.`name` as `family`,
+`l`.`name` as `location`,
+`a`.`name` as `activity`,
+`p`.`name` as `popularity`
 FROM `destinations` AS `d`
 INNER JOIN `weather` AS `w` ON ( `d`.`wid`= `w`.`wid`)
 INNER JOIN `cost` AS  `c` ON ( `d`.`cid` = `c`.`cid` )
