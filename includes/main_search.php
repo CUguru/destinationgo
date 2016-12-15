@@ -1,6 +1,6 @@
 <?php
 
-// Prepare all PDO data to be used later
+//Prepare all PDO data to be used later
 $host = 'localhost';
 $dbname   = 'yujua_DestinationGoFinal';
 $user = 'root';
@@ -30,13 +30,13 @@ try {
     echo "ERROR: ".$error->getMessage();
 }
 
-// create a new PDO connection to the database
-//try {
-//	$db = new PDO("mysql:host=uguru.dev.fast.sheridanc.on.ca;dbname=uguru_destinationGo;charset=utf8", "uguru_traveller", "WhyMustItBeThisLong?");
-//	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//} catch(PDOException $error) {
-//	echo "ERROR: ".$error->getMessage();
-//}
+//create a new PDO connection to the database
+// try {
+// 	$db = new PDO("mysql:host=uguru.dev.fast.sheridanc.on.ca;dbname=uguru_destinationGo;charset=utf8", "uguru_traveller", "WhyMustItBeThisLong?");
+// 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// } catch(PDOException $error) {
+// 	echo "ERROR: ".$error->getMessage();
+// }
 
 // fetch all the variables from the checkboxed options
 $weather = $_GET['weather'];
