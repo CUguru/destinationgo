@@ -30,14 +30,6 @@ try {
     echo "ERROR: ".$error->getMessage();
 }
 
-//create a new PDO connection to the database
-// try {
-// 	$db = new PDO("mysql:host=uguru.dev.fast.sheridanc.on.ca;dbname=uguru_destinationGo;charset=utf8", "uguru_traveller", "WhyMustItBeThisLong?");
-// 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-// } catch(PDOException $error) {
-// 	echo "ERROR: ".$error->getMessage();
-// }
-
 // fetch all the variables from the checkboxed options
 $weather = $_GET['weather'];
 $activity = $_GET['activity'];
@@ -61,6 +53,7 @@ $popularity = $_GET['popularity'];
 
 // create the main sql query
 $sql = "SELECT `d`.`name`,
+`d`.`pictures`,
 `w`.`name` as `weather`,
 `c`.`name` as `cost`,
 `f`.`name` as `family`,
@@ -144,12 +137,12 @@ function dump($el)
 
 //dump($data);
 
-global $destination;
+global $destination, $picture;
 
-foreach($data as $row) {
-    $destination = $row[0];
-}
+$destination = $data[0][0];
+$picture = $data[0][1];
 
-// echo $destination;
+//echo $destination;
+//echo $picture;
 
 ?>

@@ -18,7 +18,7 @@
         <div class="margin_b2"></div>
         <div class='results-container'>
             <div class='results-image-container'>
-                <img src='images/pic01.jpg'/>
+                <img src='images/<?php echo $picture ?>.jpg'/>
             </div> <!-- end results-image -->
             <div class='results-text'>
                 <h2><?php echo $destination; ?></h2>
