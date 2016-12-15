@@ -46,18 +46,18 @@ $location = $_GET['location'];
 $family = $_GET['family'];
 $popularity = $_GET['popularity'];
 
-echo($weather);
-echo "<br>";
-echo($activity);
-echo "<br>";
-echo($cost);
-echo "<br>";
-echo($location);
-echo "<br>";
-echo($popularity);
-echo "<br>";
-echo($family);
-echo "<br>";
+//echo($weather);
+//echo "<br>";
+//echo($activity);
+//echo "<br>";
+//echo($cost);
+//echo "<br>";
+//echo($location);
+//echo "<br>";
+//echo($popularity);
+//echo "<br>";
+//echo($family);
+//echo "<br>";
 
 // create the main sql query
 $sql = "SELECT `d`.`name`,
@@ -142,11 +142,14 @@ function dump($el)
     echo "</pre></div>";
 }
 
-dump($data);
+//dump($data);
+
+global $destination;
 
 foreach($data as $row) {
-    echo "Your destination: ";
-    echo $row[0];
+    $destination = $row[0];
 }
+
+// echo $destination;
 
 ?>
