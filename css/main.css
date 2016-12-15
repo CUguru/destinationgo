@@ -247,6 +247,11 @@ header {
     /*text-align: center;*/
 }
 #preferences-form {
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;*/
     margin: 0 auto;
 }
 
@@ -289,6 +294,15 @@ header {
     margin: auto;
     width: 115px;
     height: 115px;
+}
+input[type="radio"] {
+    display: none;
+}
+
+#preferences-form input{
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
 }
 
 .categories > div {
