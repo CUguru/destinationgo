@@ -28,8 +28,14 @@
                 <p>Nam facilisis id est et maximus. Duis et convallis risus, aliquet maximus quam. Vivamus vel mi varius, tincidunt velit commodo, scelerisque tortor. Duis a commodo lectus. Etiam tincidunt ipsum id nunc sodales, ut vehicula urna fringilla. Nunc non finibus ante. Fusce in venenatis dolor. Aenean consequat metus consectetur, rhoncus augue non, pharetra sem. Fusce efficitur ipsum fermentum, tristique urna eget, hendrerit neque. Vivamus id felis ut massa lobortis luctus ut sit amet risus. Quisque in rhoncus nunc. Phasellus eget eleifend orci. Nunc enim justo, suscipit vitae fermentum in, auctor tristique ex.</p>
                 <a href='#'><div class='read-more read_float'>READ MORE</div></a>
             </div> <!-- end results-text -->
+
             
         </div> <!-- end results-container -->
+        <a href='default.php' id="back-to-search">
+            <div id='back-to-search-page'>
+                BACK TO SEARCH
+            </div>
+        </a>
     </div> <!-- end search-results-bg -->
 </main>
 

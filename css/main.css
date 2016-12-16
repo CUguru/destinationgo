@@ -646,6 +646,13 @@ input[type="radio"] {
     margin: 1em 0 1.6em;
 }
 
+#back-to-search {
+    color: #000;
+    padding-top: 20px;
+    font-weight: medium;
+    font-size: 1.1em;
+}
+
 
 /*!!!!!----------- NEWSLETTER.PHP -----------!!!!!*/
 
