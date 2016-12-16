@@ -11,6 +11,7 @@
             <h1 class="font_white">Pick Your Preferences</h1>
                 <form id='preferences-form' action='search_results.php' method='get' name="preferForm">
                     <div class="buttons-row" >
+                        
                         <div class='categories-box'>
                             <input type="radio" name="weather" value="beach" id="beach"/>
                             <label class="category-button" for="beach">
@@ -30,7 +31,8 @@
                                     document.getElementById("icon_mountains").src = "images/icon_mountains_off.png";
                                 }
                             </script>
-                        </div>
+                        </div> <!-- end categories-box -->
+                        
                         <div class='categories-box'>
                             <input type="radio" name="activity" value="relaxing" id="relaxing"/>
                             <label class="category-button" for="relaxing">
@@ -50,7 +52,8 @@
                                     document.getElementById("icon_nightlife").src = "images/icon_nightlife_off.png";
                                 }
                             </script>
-                        </div>
+                        </div> <!-- end categories-box -->
+                        
                         <div class='categories-box'>
                             <input type="radio" name="cost" value="high" id="high"/>
                             <label class="category-button" for="high">
@@ -70,9 +73,8 @@
                                     document.getElementById("icon_thrifty").src = "images/icon_thrifty_off.png";
                                 }
                             </script>
-                        </div>
-                    <!--</div>
-                    <div class="buttons-row">-->
+                        </div> <!-- end categories-box -->
+                        
                         <div class='categories-box'>
                             <input type="radio" name="location" value="urban" id="urban"/>
                             <label class="category-button" for="urban">
@@ -92,7 +94,8 @@
                                     document.getElementById("icon_rural").src = "images/icon_rural_off.png";
                                 }
                             </script>
-                        </div>
+                        </div> <!-- end categories-box -->
+                        
                         <div class='categories-box'>
                             <input type="radio" name="family" value="kids" id="kids"/>
                             <label class="category-button" for="kids">
@@ -112,7 +115,8 @@
                                     document.getElementById("icon_adults").src = "images/icon_adults_off.png";
                                 }
                             </script>
-                        </div>
+                        </div> <!-- end categories-box -->
+                        
                         <div class='categories-box'>
                             <input type="radio" name="popularity" value="popular" id="popular"/>
                             <label class="category-button" for="popular">
@@ -132,8 +136,8 @@
                                     document.getElementById("icon_hidden").src = "images/icon_hidden_off.png";
                                 }
                             </script>
-                        </div> <br>
-                    </div>
+                        </div> <!-- end categories-box --> <br>
+                    </div> <!-- end buttons-row -->
                     <div class="add_space"></div>
                     <button class="button1" type="Submit">FIND YOUR VACATION</button>      
                 </form> <!-- end preferences-form -->

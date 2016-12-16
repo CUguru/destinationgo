@@ -1,46 +1,67 @@
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1250px) {
+    .buttons-row{
+        width: 500px;
+    }
+    #preferences-section {
+        height: 55em;
+    }
+}
+
+@media screen and (max-width: 900px) {
     #about-us-section {
     height: 80em;
     }
- 
-
+    .buttons-row{
+        display: block;
+    }
+    .categories-box {
+        margin: auto;
+    }
+    #preferences-section {
+        height: 75em;
+    }
 }
 
 @media screen and (max-width: 850px) {
     #navigation ul {
         font-size: 14px;
     }
-    #preference_blackBg {
-        height: 36em;
-        margin: 6em auto 0;
     
+    #preference_blackBg {
+        height: 60em;
+        margin: 6em auto 0;
     }
+    
     .box-border {
         width: 500px;
         height: 350px;
         left: 30%;
     }
+    
     .newsletter-box {
         width: 330px;
-        /*height: 285px;*/
         height: 310px;
     }
+    
     /*about us*/
     #about-us-section {
-        /*height: 85em;*/
     }
+    
     /* featured locations */
     #featured_locations-section {
      height: 87em;
      margin: 6em auto 0;
     }
+    
     .image-container2 {
     height: 20em;
     }
+    
     /*reviews*/
     #reviews-section {
         height: 135em;
     }
+    
     .image-container {
         height: 20em;
     }
@@ -181,7 +202,7 @@
     .image-container {
         height: 12em;
     }
-     /* featured locations */
+    /* featured locations */
      #featured_locations-section {
         height: 115em;
     }

@@ -1,28 +1,16 @@
 <?php
 
-//Prepare all PDO data to be used later
-$host = 'localhost';
+// Prepare all PDO data to be used later
+$host = 'yujua.dev.fast.sheridanc.on.ca';
 $dbname   = 'yujua_DestinationGoFinal';
-$user = 'root';
-$pass = 'root';
+$user = 'yujua_guest';
+$pass = 'X5N6N@xUpYa_';
 $charset = 'utf8';
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $opt = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
-
-// Prepare all PDO data to be used later
-//$host = 'yujua.dev.fast.sheridanc.on.ca';
-//$dbname   = 'yujua_DestinationGoFinal';
-//$user = 'yujua_guest';
-//$pass = 'X5N6N@xUpYa_';
-//$charset = 'utf8';
-//$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
-//$opt = [
-//    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-//    PDO::ATTR_EMULATE_PREPARES   => false,
-//];
 
 try {
     $db = new PDO($dsn, $user, $pass, $opt);
@@ -37,19 +25,6 @@ $cost = $_GET['cost'];
 $location = $_GET['location'];
 $family = $_GET['family'];
 $popularity = $_GET['popularity'];
-
-//echo($weather);
-//echo "<br>";
-//echo($activity);
-//echo "<br>";
-//echo($cost);
-//echo "<br>";
-//echo($location);
-//echo "<br>";
-//echo($popularity);
-//echo "<br>";
-//echo($family);
-//echo "<br>";
 
 // create the main sql query
 $sql = "SELECT `d`.`name`,
